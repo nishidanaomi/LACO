@@ -7,6 +7,7 @@ Um ano é bissexto quando o mesmo é divisível por 4 e não por 100 ou é divisível 
 
 using namespace std;
 int main() {
+
     int ano;
 
     cout << "Digite o ano para saber se ele e bissexto: " << endl;
