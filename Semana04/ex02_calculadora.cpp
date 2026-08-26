@@ -9,33 +9,33 @@ int main (){
 	char operador;
 	double resultado;
 	
-cout << "Digite a conta separado por espaço (ex: 5 + 3): ";
-cin >> num1 >> operador >> num2;
-/*
-cout << "Digite o primeiro número:  ";
+/*cout << "Digite a conta separado por espaÃ§o (ex: 5 + 3): ";
+cin >> num1 >> operador >> num2;*/
+
+cout << "Digite o primeiro nÃºmero:  ";
 cin >> num1;
 
-cout << "Digite o operador do cálculo (+, -, *, /): ";
+cout << "Digite o operador do cÃ¡lculo (+, -, *, /): ";
 cin >> operador;
 
-cout << "Digite o segundo número: ";
+cout << "Digite o segundo nÃºmero: ";
 cin >> num2; 
-*/
+
 
 if ( operador == '+' ) {
 	resultado = num1 + num2;
-	cout << "O resultado de " << num1 << " + " << num2 << " é igual a: " << resultado << endl;
+	cout << "O resultado de " << num1 << " + " << num2 << " Ã© igual a: " << resultado << endl;
 } else if ( operador == '-' ) {
 	resultado = num1 - num2;
-	cout << "O resultado de " << num1 << " - " << num2 << " é igual a: " << resultado << endl;
+	cout << "O resultado de " << num1 << " - " << num2 << " Ã© igual a: " << resultado << endl;
 } else if ( operador == '*' ) {
 	resultado = num1 * num2;
-	cout << "O resultado de " << num1 << " * " << num2 << " é igual a: " << resultado << endl;
+	cout << "O resultado de " << num1 << " * " << num2 << " Ã© igual a: " << resultado << endl;
 } else if ( operador == '/' && num2 != 0 ){
 	resultado = num1 / num2;
-	cout << "O resultado de " << num1 << " / " << num2 << " é igual a: " << resultado << endl;
+	cout << "O resultado de " << num1 << " / " << num2 << " Ã© igual a: " << resultado << endl;
 } else {
-	cout << "Entrada inválida. Inicie o programa e digite novamente.";
+	cout << "Entrada invÃ¡lida. Inicie o programa e digite novamente.";
 }
 
 return 0;
