@@ -18,23 +18,22 @@ using namespace std;
 int main(){
 
     double total;
-    double desconto = 0.00;
+    double desconto = 0;
 
     cout << "Total da compra: ";
     cin >> total;
 
-    if ( total >= 100.00 && total < 200.00 ){
+    if ( total >= 100 && total < 200 ){
             desconto = total * 0.1;
-        cout << "Valor original: R$" << total << endl;
-        cout << "Valor do desconto: R$" << desconto << endl;
-    } else if ( total >= 200.00 ) {
+    } else if ( total >= 200 ) {
         desconto = total * 0.2;
-        cout << "Valor original: R$" << total << endl;
-        cout << "Valor do desconto: R$" << desconto << endl;
     } else {
-        cout << "Valor original: R$" << total << endl;
-        cout << "Valor do desconto: " << desconto << endl;
+        desconto = 0;
     }
+
+    system("cls");
+    cout << "Valor original: R$" << total << endl;
+    cout << "Valor do desconto: R$" << desconto << endl;
 
     return 0;
 }
