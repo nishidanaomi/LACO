@@ -1,6 +1,6 @@
 /*
-Desenvolva um programa que leia um ano e determine se ele È bissexto.
-Um ano È bissexto quando o mesmo È divisÌvel por 4 e n„o por 100 ou È divisÌvel por 400
+Desenvolva um programa que leia um ano e determine se ele √© bissexto.
+Um ano √© bissexto quando o mesmo √© divis√≠vel por 4 e n√£o por 100 ou √© divis√≠vel por 400
 */
 
 #include <iostream>
@@ -18,6 +18,8 @@ int main() {
     } else {
         cout << "O ano nao e bissexto." << endl;
     }
+
+    //cout<<(((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 == 0)) ? "O ano e bissexto" : "O ano nao e bissexto.");
 
     return 0;
 }
