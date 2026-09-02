@@ -13,17 +13,17 @@ int main() {
 
         system("cls");
 
-        do {
+        while (mult >= 0) {
             cout<<tabuada<<" x "<<mult<<" = "<<(tabuada*mult)<<endl;
             mult--;
-        } while (mult >= 0);
+        }
 
         cout<<"Deseja continuar? (S/N)"<<endl;
         cin>>cont;
 
         system("cls");
 
-    } while (cont=='S');
+    } while ((cont=='S')||(cont=='s'));
 
     return 0;
 }
