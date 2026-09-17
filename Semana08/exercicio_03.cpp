@@ -14,18 +14,13 @@ int main(){
     cout<<"Digite a senha: "<<endl;
     cin>>senha;
 
-    do{
-        if(senha==1234){
-            cout<<"Senha correta. Numero de tentativas: "<<tentativas<<endl;
-        }
+    while(senha!=1234){
+        cout<<"Senha incorreta! Tente novamente: "<<endl;
+        cin>>senha;
+        tentativas+=1;
+    }
 
-    } while(senha!=1234);{
-    cout<<"Senha incorreta. Digite novamente a senha: "<<endl;
-    cin>>senha;
-            tentativas++;
-            }
-
-
+    cout<<"Senha correta! Voce acertou a senha com "<<tentativas<<" tentativas."<<endl;
 
     return 0;
 }
