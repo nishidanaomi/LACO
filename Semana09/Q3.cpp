@@ -4,10 +4,11 @@
 using namespace std;
 
 int main(){
-    int V[10];
+    int QTD=10;
+    int V[QTD];
     int qtdn = 0, somap=0;
 
-    for(int i=0; i<10; i++){
+    for(int i=0; i<QTD; i++){
         cin>>V[i];
 
         if(V[i]<0){
@@ -16,6 +17,8 @@ int main(){
             somap+=V[i];
         }
     }
+
+    system("cls");
     cout<<"Quantidade de numeros negativos: "<<qtdn<<endl;
     cout<<"Soma dos numeros positivos: "<<somap<<endl;
 
