@@ -5,17 +5,18 @@
 ˜(d) Mostre na tela cada valor do vetor A, um em cada linha.*/
 
 #include <iostream>
+using namespace std;
 
 int main() {
     int A [6]={1, 0, 5, -2, -5, 7}; //(a)
     int soma;
     soma = A[0]+A[1]+A[5]; //(b)
-    std::cout << "soma dos vetores na posição 0, 1, 5= "<< soma << std::endl;
+    cout <<"soma dos vetores na posição 0, 1, 5= "<<soma<<endl;
 
     A[4]=100; //(c)
 
     for(int i=0; i<6; i++){
-        std::cout<<A[i]<<std::endl; //(d)
+        cout<<A[i]<<endl; //(d)
     }
 
     return 0;
