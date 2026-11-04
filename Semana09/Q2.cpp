@@ -4,24 +4,24 @@
 using namespace std;
 
 int main(){
-    int V[10];
+    int qtd=10;
+    int V[qtd];
     int maior, menor;
     maior=0;
 
-    for(int i=0; i<10; i++){
+    for(int i=0; i<qtd; i++){
         cin>>V[i];
     }
-    for(int i=0; i<10; i++){
+    maior=menor=V[0];
+    for(int i=0; i<qtd; i++){
         if(V[i]>maior){
             maior=V[i];
         }
-    }
-    menor=maior;
-    for(int i=0; i<10; i++){
         if(V[i]<menor){
             menor=V[i];
         }
     }
+
     cout<<"Maior elemento do vetor = "<<maior<<endl;
     cout<<"Menor elemento do vetor = "<<menor<<endl;
 
