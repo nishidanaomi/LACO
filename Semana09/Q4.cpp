@@ -4,20 +4,22 @@
 using namespace std;
 
 int main(){
-    int V[5];
-    double media;
+    int QTD=5;
+    int V[QTD];
+    double media,soma;
 
-    for(int i=0; i<5; i++){
+    for(int i=0; i<QTD; i++){
         cin>>V[i];
     }
     system("cls");
     cout<<"Valores digitados: ";
-    for(int i=0; i<5; i++){
+    for(int i=0; i<QTD; i++){
         cout<<V[i]<<" ";
+        soma+=V[i];
     }
     cout<<endl;
 
-    media=(V[0]+V[1]+V[2]+V[3]+V[4])/5;
+    media=soma/QTD;
     cout<<"Media: "<<media<<endl;
 
     return 0;
